@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Calculator</title>
+    <link rel="stylesheet" href="./CSS/Styles.css">
+    <link rel="stylesheet" href="./CSS/nav.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <a href="./Loan-calcualtor.html" class="nav-logo"><h1>Loan Calculator</h1></a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="./Loan-calcualtor.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Exchange Retes</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./About.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./Error.html" class="nav-link">Error Page</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="calculator-body">
+            <h1>Loan Calculator</h1>
+            <div class="calculator-input">
+                <div class="input-group">
+    
+                    <input type="number" id="amount" required>
+                    <label for="amount">Loan Amount:</label><br><br>
+                </div>
+    
+                <div class="input-group">
+                    <input type="number" id="interest" step="0.01" required>
+                    <label for="interest">Annual Interest Rate (%):</label><br><br>
+                </div>
+    
+                <div class="input-group">
+                    <input type="number" id="years" required>
+                    <label for="years">Loan Term (Years):</label><br><br>
+                </div>
+              
+            </div>
+            
+        </div>
+        
+        <div class="btn">
+            <button class="calculate-btn" onclick="calculateLoan()">Calculate</button>
+            <button class="reset-btn" onclick="resetLoan()">Reset</button>
+        </div>
+        
+        
+        <div class="loan-details">
+            <h2 id="loan-schedule"></h2>
+            <table id="schedule">
+                
+            </table>
+        </div>
+    </div>
+    
+    
+
+    <script src="Script.js"></script>
+    <script src="main.js"></script>
+</body>
+   
+</html>
